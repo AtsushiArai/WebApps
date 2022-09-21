@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    体重（キログラム）：<input type="text" name="weight" value="{{ result.weight }}">
+    <br>
+    身長（センチメートル）：<input type="text" name="height" value="{{ result.height }}">
+    <br>
+    <button type="submit" id="btn-submit" class="btn btn-primary">BMIの計算</button>
+</form>
+
+
+BMI：<input type="text" name="kaup" value="{{ result.bmi }}">
+
+
+
+
+
+{% endblock %}

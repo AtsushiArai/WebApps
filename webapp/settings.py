@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'top_page.apps.TopPageConfig',
     'kaup_index.apps.KaupIndexConfig',
+    'bmi_index.apps.BmiIndexConfig',
     'django_bootstrap5',
 ]
 
