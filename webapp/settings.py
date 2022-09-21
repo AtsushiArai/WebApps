@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'top_page.apps.TopPageConfig',
     'kaup_index.apps.KaupIndexConfig',
     'django_bootstrap5',
 ]
