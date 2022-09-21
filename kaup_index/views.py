@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def kaup(request):
     if request.method == "GET":
-        return render(request, "kaup/index.html")
+        return render(request, "kaup/kaup.html")
 
     else:
         posted_weight = int(request.POST["weight"])
@@ -24,4 +24,4 @@ def kaup(request):
         }
         context['result'] = form
 
-        return render(request, "kaup/index.html", context)
+        return render(request, "kaup/kaup.html", context)
