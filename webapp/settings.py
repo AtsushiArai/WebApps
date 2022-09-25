@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-pd-f(t#2c3d=iue7=jm5)#oo#tx1e-0*2^fie$*rbhw(*&$hb(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '160.251.99.29']
+ALLOWED_HOSTS = ['127.0.0.1', '160.251.99.29', 'localhost', 'input-and-output.com']
 
 
 # Application definition
@@ -125,9 +125,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'usr/share/nginx/html/static'
+STATIC_ROOT = '/usr/share/nginx/html/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 参考
+# https://self-methods.com/django-vps-deploy/#index_id22
+# https://snowtree-injune.com/2020/11/07/nginx-part3-dj015/
