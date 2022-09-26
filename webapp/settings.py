@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'kaup_index.apps.KaupIndexConfig',
     'bmi_index.apps.BmiIndexConfig',
     'django_bootstrap5',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [

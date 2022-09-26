@@ -19,10 +19,14 @@ from django.urls import path
 from top_page.views import index
 from kaup_index.views import kaup
 from bmi_index.views import bmi
+from blog.views import blog, IndexView, PostListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('kaup/', kaup, name='kaup'),
-    path('bmi/', bmi, name='bmi')
+    path('bmi/', bmi, name='bmi'),
+    path('blog/', IndexView.as_view(), name='blog'),
+    path('admin/', admin.site.urls),
+    path('blog_list/', PostListView.as_view(), name='blog_list')
 ]
