@@ -12,7 +12,31 @@
     <button type="submit" id="btn-submit" class="btn btn-primary">カウプ指数の計算</button>
 </form>
 
-
+<br>
 カウプ指数の計算結果：<input type="text" name="kaup" value="{{ result.kaup }}">
 
+<br>
+<br>
+<div>
+    <h3>カウプ指数とは？</h3>
+    <p>幼児の肥満度を評価するための指標です。</p>
+    <p>「BMIの幼児版」という表現の方がしっくりくるかもしれません。</p>
+</div>
+<br>
+<div>
+<h3>計算方法</h3>
+<p>カウプ指数＝（体重[g] ÷ 身長[cm]の２乗）× 10</p>
+
+<p>（例）</p>
+<p>体重15kg、身長100cmの場合</p>
+<p>(15000g ÷ 100cm × 100cm) × 10 ＝15　∴カウプ指数は「15」</p>
+</div>
+<br>
+<div>
+<h3>指数の目安</h3>
+<p>14以下：やせぎみ</p>
+<p>15〜17：ふつう</p>
+<p>18以上：ふとりぎみ</p>
+<p><small>（参考：（厚生労働省）<a href="https://www.mhlw.go.jp/toukei/saikin/hw/syusseiji/tokubetsu/yougo.html">「21世紀出生児縦断調査（特別報告）結果の概況）</a></small></p>
+</div>
 {% endblock %}
