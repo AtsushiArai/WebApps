@@ -124,6 +124,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+# static ファイルを反映させるにあたっての留意事項
+# https://snowtree-injune.com/2020/11/07/nginx-part3-dj015/#toc8
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/usr/share/nginx/html/static'
