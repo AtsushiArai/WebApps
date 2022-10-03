@@ -139,3 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # 参考
 # https://self-methods.com/django-vps-deploy/#index_id22
 # https://snowtree-injune.com/2020/11/07/nginx-part3-dj015/
+
+# google analytics
+GOOGLE_ANALYTICS_TRACKING_ID = "G-JLWH4G5MM3"
