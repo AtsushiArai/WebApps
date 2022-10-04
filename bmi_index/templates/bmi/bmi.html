@@ -7,7 +7,7 @@
 
 {% block main %}
 
-
+<h2>BMIを計算しよう！</h2>
 <form action="" method="POST">
     {% csrf_token %}
     体重（キログラム）：<input type="text" name="weight" value="{{ result.weight }}">
@@ -18,10 +18,10 @@
 </form>
 
 
-BMI：<input type="text" name="bmi" value="{{ result.bmi }}">
+BMIの計算結果：<input type="text" name="bmi" value="{{ result.bmi }}">
 <hr>
 <div class="paragraph">
-    <h3>BMIとは？</h3>
+    <h3>BMI（Body mass index）とは？</h3>
     <p class="inner-paragraph">"Body mass index"の略称で、日本語では「ボディマス指数」と呼ばれます。</p>
     <p class="inner-paragraph">体重と身長をもとに、肥満度を表す指数です。</p>
     <p class="inner-paragraph">似たような指数に「カウプ指数」「ローレル指数」がありますが、以下のように対象が異なります。</p>
@@ -46,7 +46,7 @@ BMI：<input type="text" name="bmi" value="{{ result.bmi }}">
 
 </div>
 <div class="paragraph">
-    <h3>計算方法</h3>
+    <h3>BMIの計算方法</h3>
     <p>BMI＝（体重[kg] ÷ 身長[m]の２乗）</p>
 
     <p class="inner-paragraph">（例）</p>
@@ -55,7 +55,7 @@ BMI：<input type="text" name="bmi" value="{{ result.bmi }}">
 </div>
 
 <div class="paragraph">
-    <h3>指数の目安</h3>
+    <h3>BMIの目安</h3>
     <div class="table-flex">
     <table>
         <thead>
