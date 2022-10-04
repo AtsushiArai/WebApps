@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'bmi_index.apps.BmiIndexConfig',
     'django_bootstrap5',
     'blog.apps.BlogConfig',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

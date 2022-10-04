@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
 
 from top_page.views import index
@@ -21,13 +22,18 @@ from kaup_index.views import kaup
 from bmi_index.views import bmi
 from blog.views import blog, IndexView, PostListView
 
+from .sitemaps import Static_Sitemap
+
+sitemaps = {
+    'static': Static_Sitemap(),
+}
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('kaup/', kaup, name='kaup'),
     path('bmi/', bmi, name='bmi'),
     path('blog/', include('blog.urls')),
-    # path('blog/', IndexView.as_view(), name='blog'),
     path('admin/', admin.site.urls),
-    # path('blog_list/', PostListView.as_view(), name='blog_list')
+    path('sitemap.xml', sitemap, {'sitemaps':sitemaps}, name='sitemaps'),
 ]
