@@ -9,15 +9,32 @@
 <h2>カウプ指数を計算しよう！</h2>
 <form action="" method="POST">
     {% csrf_token %}
-    体重（キログラム）：<input type="text" name="weight" value="{{ result.weight }}">
-    <br>
-    身長（センチメートル）：<input type="text" name="height" value="{{ result.height }}">
-    <br>
-    <button type="submit" id="btn-submit" class="btn btn-primary">カウプ指数の計算</button>
+    <div>
+        <table class="calc-kaup">
+            <tr>
+                <td>体重（キログラム）</td>
+                <td><input type="text" name="weight" value="{{ result.weight }}"></td>
+            </tr>
+            <tr>
+                <td>身長（センチメートル）</td>
+                <td><input type="text" name="height" value="{{ result.height }}"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button type="submit" id="btn-submit" class="btn btn-primary">カウプ指数の計算</button>
+    </div>
 </form>
 
-<br>
-カウプ指数の計算結果：<input type="text" name="kaup" value="{{ result.kaup }}">
+<div>
+    <table class="calc-kaup">
+        <tr>
+            <td>カウプ指数の計算結果</td>
+            <td><input type="text" name="bmi" value="{{ result.kaup }}" disabled></td>
+        </tr>
+    </table>
+</div>
+
 <hr>
 <div class="paragraph">
     <h3>カウプ指数とは？</h3>
