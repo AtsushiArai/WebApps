@@ -10,21 +10,31 @@
 <h2>BMIを計算しよう！</h2>
 <form action="" method="POST">
     {% csrf_token %}
-    <table class="calc-bmi">
-        <tr>
-            <td>体重（キログラム）</td>
-            <td><input type="text" name="weight" value="{{ result.weight }}"></td>
-        </tr>
-        <tr>
-            <td>身長（センチメートル）</td>
-            <td><input type="text" name="height" value="{{ result.height }}"></td>
-        </tr>
-    </table>
-    <button type="submit" id="btn-submit" class="btn btn-primary">BMIの計算</button>
+    <div>
+        <table class="calc-bmi">
+            <tr>
+                <td>体重（キログラム）</td>
+                <td><input type="text" name="weight" value="{{ result.weight }}"></td>
+            </tr>
+            <tr>
+                <td>身長（センチメートル）</td>
+                <td><input type="text" name="height" value="{{ result.height }}"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button type="submit" id="btn-submit" class="btn btn-primary">BMIの計算</button>
+    </div>
 </form>
 
-
-BMIの計算結果：<input type="text" name="bmi" value="{{ result.bmi }}">
+<div>
+    <table class="calc-bmi">
+        <tr>
+            <td>BMIの計算結果</td>
+            <td><input type="text" name="bmi" value="{{ result.bmi }}" disabled></td>
+        </tr>
+    </table>
+</div>
 <hr>
 <div class="paragraph">
     <h3>BMI（Body mass index）とは？</h3>
