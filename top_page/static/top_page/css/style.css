@@ -13,6 +13,7 @@
 /* breadcrumbs start */
 .breadcrumb {
     margin: 0;
+    margin-bottom: 1rem;
     padding: 0;
     list-style: none;
   }
@@ -20,7 +21,6 @@
   .breadcrumb li {
     display: inline;
     list-style: none;
-    font-weight: bold;
   }
   
   .breadcrumb li:after {
@@ -35,7 +35,7 @@
   
   .breadcrumb li a {
     text-decoration: none;
-    color: #52b5ee;
+    color: #495057;
   }
   
   .breadcrumb li a:hover {
