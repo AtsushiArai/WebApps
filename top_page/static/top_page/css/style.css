@@ -43,37 +43,3 @@
   }
   /* breadcrumbs end */
   
-.paragraph {
-    margin-top: 20px;
-}
-
-.inner-paragraph {
-    margin-bottom: 2px;
-}
-
-table {
-    border: solid 1px ;
-}
-
-/* CSS | display:flexのgapで要素間の余白を指定する方法 */
-/* https://1-notes.com/css-flexbox-gap/ */
-.table-flex {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-td, th {
-    padding: 10px;
-    border: solid 1px;
-}
-
-th {
-    background-color: ivory;
-}
-
-
-.calc-kaup {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
