@@ -146,3 +146,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # google analytics
 GOOGLE_ANALYTICS_TRACKING_ID = "G-JLWH4G5MM3"
+
+# http -> https redirect
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
