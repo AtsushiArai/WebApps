@@ -2,6 +2,18 @@
 
 {% block main %}
 
+<!-- パンくずリスト start -->
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com">
+            <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+</ol>
+<!-- パンくずリスト end -->
+
 <p><a href="{% url 'kaup' %}">カウプ指数の計算</a></p>
 
 <p><a href="{% url 'bmi' %}">BMIの計算</a></p>

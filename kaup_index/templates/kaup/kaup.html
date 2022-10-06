@@ -6,6 +6,25 @@
 {% endblock %}
 {% block main %}
 
+<!-- パンくずリスト start -->
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com">
+            <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com/kaup/">
+            <span itemprop="name">カウプ指数の計算</span>
+        </a>
+        <meta itemprop="position" content="2" />
+    </li>
+</ol>
+<!-- パンくずリスト end -->
+
 <h2>カウプ指数を計算しよう！</h2>
 <form action="" method="POST">
     {% csrf_token %}
