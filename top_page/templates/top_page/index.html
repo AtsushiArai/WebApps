@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block extraheader %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'top_page/css/style.css' %}">
+{% endblock %}
+
 {% block main %}
 
 <!-- パンくずリスト start -->
