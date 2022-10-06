@@ -33,7 +33,7 @@ urlpatterns = [
     path('', index, name='index'),
     path('kaup/', kaup, name='kaup'),
     path('bmi/', bmi, name='bmi'),
-    path('blog/', include('blog.urls')),
+    # path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
     path('sitemap.xml', sitemap, {'sitemaps':sitemaps}, name='sitemaps'),
 ]
