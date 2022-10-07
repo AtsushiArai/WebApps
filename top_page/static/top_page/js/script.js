@@ -45,7 +45,7 @@ var Expand = (window.addEventListener('DOMContentLoaded', function () {
     return {
       init: init
     };
-  }))();
+  }));
   
   Expand.init();
   
