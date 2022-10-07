@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
 
-from top_page.views import index
+from top_page.views import index, indextest
 from kaup_index.views import kaup
 from bmi_index.views import bmi
 from blog.views import blog, IndexView, PostListView
@@ -31,6 +31,7 @@ sitemaps = {
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
+    path('test/', indextest, name='test'),
     path('kaup/', kaup, name='kaup'),
     path('bmi/', bmi, name='bmi'),
     # path('blog/', include('blog.urls')),
