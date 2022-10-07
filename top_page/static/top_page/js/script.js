@@ -1,4 +1,4 @@
-var Expand = (function () {
+var Expand = addEventListener('DOMContentLoaded', (function () {
     var tile = $(".strips__strip");
     var tileLink = $(".strips__strip > .strip__content");
     var tileText = tileLink.find(".strip__inner-text");
@@ -45,7 +45,7 @@ var Expand = (function () {
     return {
       init: init
     };
-  })();
+  })());
   
   Expand.init();
   
