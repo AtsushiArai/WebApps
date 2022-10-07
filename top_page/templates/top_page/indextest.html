@@ -16,7 +16,7 @@
       
         var expanded = false;
       
-        var open = function () {
+        var open = window.addEventListener('DOMContentLoaded', function () {
           var tile = $(this).parent();
       
           if (!expanded) {
@@ -27,9 +27,9 @@
             stripClose.css("transition", "all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)");
             expanded = true;
           }
-        };
+        });
       
-        var close = function () {
+        var close = window.addEventListener('DOMContentLoaded', function () {
           if (expanded) {
             tile.removeClass("strips__strip--expanded");
             // remove delay from inner text
@@ -41,16 +41,16 @@
             );
             expanded = false;
           }
-        };
+        });
       
-        var bindActions = function () {
+        var bindActions = window.addEventListener('DOMContentLoaded', function () {
           tileLink.on("click", open);
           stripClose.on("click", close);
-        };
+        });
       
-        var init = function () {
+        var init = window.addEventListener('DOMContentLoaded', function () {
           bindActions();
-        };
+        });
       
         return {
           init: init
