@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'top_page/css/styletest.css' %}">
 
     <script>
-        var Expand = (function () {
+        var Expand = window.addEventListener('DOMContentLoaded', (function () {
         var tile = $(".strips__strip");
         var tileLink = $(".strips__strip > .strip__content");
         var tileText = tileLink.find(".strip__inner-text");
@@ -16,7 +16,7 @@
       
         var expanded = false;
       
-        var open = window.addEventListener('DOMContentLoaded', function () {
+        var open = function () {
           var tile = $(this).parent();
       
           if (!expanded) {
@@ -27,9 +27,9 @@
             stripClose.css("transition", "all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)");
             expanded = true;
           }
-        });
+        };
       
-        var close = window.addEventListener('DOMContentLoaded', function () {
+        var close = function () {
           if (expanded) {
             tile.removeClass("strips__strip--expanded");
             // remove delay from inner text
@@ -41,21 +41,21 @@
             );
             expanded = false;
           }
-        });
+        };
       
-        var bindActions = window.addEventListener('DOMContentLoaded', function () {
+        var bindActions = function () {
           tileLink.on("click", open);
           stripClose.on("click", close);
-        });
+        };
       
-        var init = window.addEventListener('DOMContentLoaded', function () {
+        var init = function () {
           bindActions();
-        });
+        };
       
         return {
           init: init
         };
-      })();
+      })());
       
       Expand.init();
       
