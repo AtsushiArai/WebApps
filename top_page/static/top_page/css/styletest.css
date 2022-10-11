@@ -1,3 +1,11 @@
+.parent-grid {
+  width: 90%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
 a {
 	display: block;
 	padding: 20px;
