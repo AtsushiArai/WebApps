@@ -40,6 +40,17 @@ a:hover {
 
 }
 
+@media (min-width:481px) {
+    main {
+      width: 100%;
+  }
+
+  .parent-grid {
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+  }
+}
+
 
 @media (max-width:480px) {
     main {
