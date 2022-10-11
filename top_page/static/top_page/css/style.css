@@ -41,7 +41,7 @@
   gap: 1rem;
 }
 
-a .article-link {
+.article-link {
   display: block;
   padding: 20px;
   text-decoration: none;
@@ -50,7 +50,7 @@ a .article-link {
   border: solid 3px #ccc;
   background-color: #fff;
 }
-a .article-link:hover {
+.article-link:hover {
   background-color: #fffdc5;
   text-decoration: none;
 }
