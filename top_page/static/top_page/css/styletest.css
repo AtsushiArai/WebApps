@@ -1,28 +1,4 @@
 
-@media screen and(max-width:960px) {
-  main {
-      width: 100%;
-  }
-
-  .parent-grid {
-    grid-template-columns: 2fr;
-    grid-template-rows: auto;
-  }
-
-}
-
-
-@media screen and(max-width:480px) {
-    main {
-      width: 100%;
-    }
-
-    .parent-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
-}
-
 .parent-grid {
   width: 90%;
   display: grid;
@@ -50,4 +26,28 @@ a:hover {
   height: 100%;
 	text-align: center;
 	color: #5c87a6;
+}
+
+@media screen and(max-width:960px) {
+  main {
+      width: 100%;
+  }
+
+  .parent-grid {
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+  }
+
+}
+
+
+@media screen and(max-width:480px) {
+    main {
+      width: 100%;
+    }
+
+    .parent-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
 }
