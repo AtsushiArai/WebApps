@@ -10,14 +10,12 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="grid-item">カウプ指数の計算<a class="grid-link" href="{% url 'kaup' %}"></a></div>
-        <div class="grid-item">BMIの計算<a class="grid-link" href="{% url 'bmi' %}"></a></div>
-        <div class="grid-item">準備中</div>
-        <div class="grid-item">準備中</div>
-        <div class="grid-item">準備中</div>
-        <div class="grid-item">準備中</div>  
-    </div>        
+    <div class="article-area">
+        <a href="{% url 'kaup' %}">
+         <h3>カウプ指数の計算</h3>
+         <div>乳幼児用のBMIを計算できます。</div>
+        </a>
+       </div>
 </body>
 
 </html>
