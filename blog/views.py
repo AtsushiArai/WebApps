@@ -18,4 +18,4 @@ class PostCreateView(generic.CreateView):
     success_url = reverse_lazy('blog:blog_list')
 
 def blog(request):
-    pass
+    return render(request, 'blog/blog.html')
