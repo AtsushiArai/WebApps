@@ -7,7 +7,7 @@ class Static_Sitemap(Sitemap):
     changefreq = 'daily'
 
     def items(self):
-        return ['index', 'kaup', 'bmi']
+        return ['index', 'kaup', 'bmi', 'valuation']
 
     def location(self, item):
         return reverse(item)
