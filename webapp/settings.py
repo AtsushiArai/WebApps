@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'top_page.apps.TopPageConfig',
     'kaup_index.apps.KaupIndexConfig',
     'bmi_index.apps.BmiIndexConfig',
+    'valuation.apps.ValuationConfig',
     'django_bootstrap5',
     'blog.apps.BlogConfig',
     'django.contrib.sites',
