@@ -32,6 +32,25 @@ window.onkeydown = keydown;
 
 {% endblock %}
 {% block main %}
+<!-- パンくずリスト start -->
+<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com">
+            <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com/valuation/">
+            <span itemprop="name">簡易企業価値評価</span>
+        </a>
+        <meta itemprop="position" content="2" />
+    </li>
+</ol>
+<!-- パンくずリスト end -->
+
 <div class="container mt-4">
     <h2>財務数値の入力ページ</h2>
     <form action="/input_financial_data" method="POST">
