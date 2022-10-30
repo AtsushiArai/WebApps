@@ -1,3 +1,36 @@
+/* breadcrumbs start */
+.breadcrumb {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;
+    list-style: none;
+  }
+  
+  .breadcrumb li:after {
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #495057;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+  /* breadcrumbs end */
+
 #year_before_last {
     background-color: rgb(190, 220, 229);
 }
