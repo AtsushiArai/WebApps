@@ -6,7 +6,7 @@ from .models import FinancialData
 
 def valuation(request):
     if request.method == 'GET':
-        return render('valuation/valuation.html')
+        return render(request, 'valuation/valuation.html')
     if request.method == 'POST':
 
         # cookie_session = request.cookies.get('session')
@@ -979,5 +979,5 @@ def valuation(request):
 
         )
 
-        return render('valuation/valuation.html')
+        return render(request, 'valuation/valuation.html')
 
