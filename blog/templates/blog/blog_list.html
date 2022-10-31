@@ -1,6 +1,32 @@
 {% extends "base.html" %}
 
+{% block extraheader %}
+{% load static %}
+<title>blog</title>
+<meta name="description" content="作成したappのこととか。">
+<link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+{% endblock %}
+
 {% block main %}
+
+<!-- パンくずリスト start -->
+<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com">
+            <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com/blog/blog_list/">
+            <span itemprop="name">blog</span>
+        </a>
+        <meta itemprop="position" content="2" />
+    </li>
+</ol>
+<!-- パンくずリスト end -->
 
 <h1>記事一覧</h1>
 
