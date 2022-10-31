@@ -10,6 +10,7 @@ class IndexView(generic.TemplateView):
     template_name = 'blog/blog.html'
 
 class PostListView(generic.ListView):
+    template_name = 'blog/blog_list.html'
     model = Post
 
 # class PostCreateView(generic.CreateView):
