@@ -17,5 +17,5 @@ class PostCreateView(generic.CreateView):
     form_class = PostCreateForm
     success_url = reverse_lazy('blog:blog_list')
 
-def blog(request):
-    return render(request, 'blog/blog.html')
+# def blog(request):
+#     return render(request, 'blog/blog.html')
