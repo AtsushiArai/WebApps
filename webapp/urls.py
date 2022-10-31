@@ -20,7 +20,7 @@ from django.urls import path, include
 from top_page.views import index
 from kaup_index.views import kaup
 from bmi_index.views import bmi
-from blog.views import blog
+# from blog.views import blog
 from valuation.views import valuation
 
 from .sitemaps import Static_Sitemap
