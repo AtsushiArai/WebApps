@@ -12,10 +12,10 @@ class IndexView(generic.TemplateView):
 class PostListView(generic.ListView):
     model = Post
 
-class PostCreateView(generic.CreateView):
-    model = Post
-    form_class = PostCreateForm
-    success_url = reverse_lazy('blog:blog_list')
+# class PostCreateView(generic.CreateView):
+#     model = Post
+#     form_class = PostCreateForm
+#     success_url = reverse_lazy('blog:blog_list')
 
 # def blog(request):
 #     return render(request, 'blog/blog.html')
