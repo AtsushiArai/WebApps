@@ -13,6 +13,9 @@ class PostListView(generic.ListView):
     template_name = 'blog/blog_list.html'
     model = Post
 
+class PostDetailView(generic.DetailView):
+    model = Post
+
 # class PostCreateView(generic.CreateView):
 #     model = Post
 #     form_class = PostCreateForm
