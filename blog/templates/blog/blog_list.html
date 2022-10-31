@@ -14,7 +14,7 @@
     <tbody>
         {% for blog in post_list %}
         <tr>
-            <td>{{ blog.title }}</td>
+            <td><a href="{% url 'blog:blog_detail' post.pk %}">{{ blog.title }}</a></td>
             <td>{{ blog.date }}</td>
         </tr>
         {% endfor %}
