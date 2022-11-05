@@ -74,6 +74,7 @@ input {
     display: inline-block;
     vertical-align: middle;
     font-size: small;
+    margin: 0rem;
 }
 
 .td .detail-notice {
@@ -82,6 +83,7 @@ input {
     vertical-align: middle;
     font-size: small;
     color: red;
+    margin: 0rem;
 }
 
 
