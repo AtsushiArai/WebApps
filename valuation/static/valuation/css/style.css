@@ -107,3 +107,11 @@ table {
 thead {
     vertical-align: top;
 }
+
+.head-col {
+    width: 5%;
+}
+
+.result-cos {
+    width: 18%;
+}
