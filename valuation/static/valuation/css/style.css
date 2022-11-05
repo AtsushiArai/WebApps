@@ -63,10 +63,6 @@ input {
     height: 60px;
 }
 
-.th .col-head {
-    border: 0.5px dashed gray;
-}
-
 .td {
     display: table-cell;
     width: 20%;
