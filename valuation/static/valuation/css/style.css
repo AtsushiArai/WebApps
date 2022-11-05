@@ -76,6 +76,7 @@ input {
     font-size: small;
     margin: 0rem;
     padding: 1px;
+    padding-top: 0.5rem;
 }
 
 .td .detail-notice {
