@@ -503,6 +503,9 @@ def valuation(request):
                     wacc_adj.append(s)
                     grows_rate.append(r)
 
+        context['operating_cf'] = calc_operating_cf
+        context['investment_cf'] = calc_investment_cf
+        context['financial_cf'] = calc_financial_cf
         context['nopat'] = calc_nopat_topdown
         context['free_cash_flow'] = calc_free_cash_flow
         context['roic'] = calc_return_on_invested_capital

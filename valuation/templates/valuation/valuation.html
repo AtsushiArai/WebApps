@@ -111,13 +111,17 @@ window.onkeydown = keydown;
         </tbody>
     </table>
     <div id="footnote">
-        <p>NOPAT:{{ nopat }}千円</p>
-        <p>FCF:{{ free_cash_flow }}千円</p>
-        <p>ROIC（税引前）:{{ roic_bf_tax }}千円</p>
-        <p>ROIC（税引後）:{{ roic }}千円</p>
-    </div>
-    <div id="footnote">
         <p>（単位：千円）</p>
+    </div>
+
+    <div id="footnote">
+        <p>NOPAT: {{ nopat }}千円</p>
+        <p>営業CF: {{ operating_cf }} 千円</p>
+        <p>投資CF: {{ investment_cf }} 千円</p>
+        <p>財務CF: {{ financial_cf }} 千円</p>
+        <p>FCF: {{ free_cash_flow }} 千円</p>
+        <p>ROIC（税引前）: {{ roic_bf_tax }} 千円</p>
+        <p>ROIC（税引後）: {{ roic }} 千円</p>
     </div>
 <!-- GETの時は評価結果を表示しない -->
 
