@@ -59,6 +59,9 @@ window.onkeydown = keydown;
     <table class="table table-striped">
         <thead>
             <tr>
+                <th scope="col">成長率</th>
+            </tr>
+            <tr>
                 <th scope="col">成長率<br>割引率</th>
                 <th scope="col">{{ grows_rate_01 }}%<br><br></th>
                 <th scope="col">{{ grows_rate_06 }}%<br><br></th>
@@ -116,13 +119,9 @@ window.onkeydown = keydown;
     </div>
 
     <div id="footnote">
-        <p>NOPAT: {{ nopat| intcomma }}千円</p>
-        <p>営業CF: {{ operating_cf| intcomma }} 千円</p>
-        <p>投資CF: {{ investment_cf| intcomma }} 千円</p>
-        <p>財務CF: {{ financial_cf| intcomma }} 千円</p>
-        <p>FCF: {{ free_cash_flow| intcomma }} 千円</p>
-        <p>ROIC（税引前）: {{ roic_bf_tax }} %</p>
-        <p>ROIC（税引後）: {{ roic }} %</p>
+        <p>NOPAT: {{ nopat| intcomma }}千円 | FCF: {{ free_cash_flow| intcomma }} 千円</p>
+        <p>営業CF: {{ operating_cf| intcomma }} 千円 |投資CF: {{ investment_cf| intcomma }} 千円 | 財務CF: {{ financial_cf| intcomma }} 千円</p>
+        <p>ROIC（税引前）: {{ roic_bf_tax }} % | ROIC（税引後）: {{ roic }} %</p>
     </div>
 <!-- GETの時は評価結果を表示しない -->
 
