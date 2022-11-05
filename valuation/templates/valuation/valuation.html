@@ -59,10 +59,9 @@ window.onkeydown = keydown;
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">成長率</th>
+                <th scope="col" colspan="4">成長率</th>
             </tr>
             <tr>
-                <th scope="col">成長率<br>割引率</th>
                 <th scope="col">{{ grows_rate_01 }}%<br><br></th>
                 <th scope="col">{{ grows_rate_06 }}%<br><br></th>
                 <th scope="col">{{ grows_rate_11 }}%<br><br></th>
@@ -71,6 +70,9 @@ window.onkeydown = keydown;
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>割引率</td>
+            </tr>
             <tr>
                 <th scope="row">{{ wacc_adj_01 }}%</th>
                 <td class="result">{{ valuation_01| intcomma }}</td>
