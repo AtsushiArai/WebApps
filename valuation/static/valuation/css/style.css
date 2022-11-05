@@ -73,7 +73,17 @@ input {
     text-align: left;
     display: inline-block;
     vertical-align: middle;
+    font-size: small;
 }
+
+.td .detail-notice {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: small;
+    color: red;
+}
+
 
 .td input {
     /* https://qiita.com/KengoShimizu/items/22c14b282fa9f53f4bd8 */
