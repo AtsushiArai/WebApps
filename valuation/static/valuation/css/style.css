@@ -104,6 +104,10 @@ table {
     text-align: right;
 }
 
+table .information {
+    width: 50%;
+}
+
 thead {
     vertical-align: top;
 }
