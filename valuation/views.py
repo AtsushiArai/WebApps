@@ -490,7 +490,7 @@ def valuation(request):
         for r in R:
             for s in S:
                 try:
-                    v = calc_free_cash_flow / (s - r)
+                    v = int(calc_free_cash_flow / (s - r))
                     calc_valuation.append(v)
                     wacc_adj.append(s)
                     grows_rate.append(r)
@@ -503,13 +503,13 @@ def valuation(request):
                     wacc_adj.append(s)
                     grows_rate.append(r)
 
-        context['operating_cf'] = calc_operating_cf
-        context['investment_cf'] = calc_investment_cf
-        context['financial_cf'] = calc_financial_cf
-        context['nopat'] = calc_nopat_topdown
-        context['free_cash_flow'] = calc_free_cash_flow
-        context['roic'] = calc_return_on_invested_capital
-        context['roic_bf_tax'] = calc_return_on_invested_capital_before_tax
+        context['operating_cf'] = int(calc_operating_cf)
+        context['investment_cf'] = int(calc_investment_cf)
+        context['financial_cf'] = int(calc_financial_cf)
+        context['nopat'] = int(calc_nopat_topdown)
+        context['free_cash_flow'] = int(calc_free_cash_flow)
+        context['roic'] = round(calc_return_on_invested_capital * 100, 1)
+        context['roic_bf_tax'] = round(calc_return_on_invested_capital_before_tax * 100, 1)
         context["valuation_01"] = calc_valuation[0]
         context["wacc_adj_01"] = (round(wacc_adj[0] * 100, 1))
         context["grows_rate_01"] = grows_rate[0] * 100
