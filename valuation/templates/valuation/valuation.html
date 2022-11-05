@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load humanize %}
 
 {% block extraheader %}
 {% load static %}
@@ -69,43 +70,43 @@ window.onkeydown = keydown;
         <tbody>
             <tr>
                 <th scope="row">{{ wacc_adj_01 }}%</th>
-                <td class="result">{{ valuation_01 }}</td>
-                <td class="result">{{ valuation_06 }}</td>
-                <td class="result">{{ valuation_11 }}</td>
-                <td class="result">{{ valuation_16 }}</td>
-                <td class="result">{{ valuation_21 }}</td>
+                <td class="result">{{ valuation_01| intcomma }}</td>
+                <td class="result">{{ valuation_06| intcomma }}</td>
+                <td class="result">{{ valuation_11| intcomma }}</td>
+                <td class="result">{{ valuation_16| intcomma }}</td>
+                <td class="result">{{ valuation_21| intcomma }}</td>
             </tr>
             <tr>
                 <th scope="row">{{ wacc_adj_02 }}%</th>
-                <td class="result">{{ valuation_02 }}</td>
-                <td class="result">{{ valuation_07 }}</td>
-                <td class="result">{{ valuation_12 }}</td>
-                <td class="result">{{ valuation_17 }}</td>
-                <td class="result">{{ valuation_22 }}</td>
+                <td class="result">{{ valuation_02| intcomma }}</td>
+                <td class="result">{{ valuation_07| intcomma }}</td>
+                <td class="result">{{ valuation_12| intcomma }}</td>
+                <td class="result">{{ valuation_17| intcomma }}</td>
+                <td class="result">{{ valuation_22| intcomma }}</td>
             </tr>
             <tr>
                 <th scope="row">{{ wacc_adj_03 }}%</th>
-                <td class="result">{{ valuation_03 }}</td>
-                <td class="result">{{ valuation_08 }}</td>
-                <td class="result">{{ valuation_13 }}</td>
-                <td class="result">{{ valuation_18 }}</td>
-                <td class="result">{{ valuation_23 }}</td>
+                <td class="result">{{ valuation_03| intcomma }}</td>
+                <td class="result">{{ valuation_08| intcomma }}</td>
+                <td class="result">{{ valuation_13| intcomma }}</td>
+                <td class="result">{{ valuation_18| intcomma }}</td>
+                <td class="result">{{ valuation_23| intcomma }}</td>
             </tr>
             <tr>
                 <th scope="row">{{ wacc_adj_04 }}%</th>
-                <td class="result">{{ valuation_04 }}</td>
-                <td class="result">{{ valuation_09 }}</td>
-                <td class="result">{{ valuation_14 }}</td>
-                <td class="result">{{ valuation_19 }}</td>
-                <td class="result">{{ valuation_24 }}</td>
+                <td class="result">{{ valuation_04| intcomma }}</td>
+                <td class="result">{{ valuation_09| intcomma }}</td>
+                <td class="result">{{ valuation_14| intcomma }}</td>
+                <td class="result">{{ valuation_19| intcomma }}</td>
+                <td class="result">{{ valuation_24| intcomma }}</td>
             </tr>
             <tr>
                 <th scope="row">{{ wacc_adj_05 }}%</th>
-                <td class="result">{{ valuation_05 }}</td>
-                <td class="result">{{ valuation_10 }}</td>
-                <td class="result">{{ valuation_15 }}</td>
-                <td class="result">{{ valuation_20 }}</td>
-                <td class="result">{{ valuation_25 }}</td>
+                <td class="result">{{ valuation_05| intcomma }}</td>
+                <td class="result">{{ valuation_10| intcomma }}</td>
+                <td class="result">{{ valuation_15| intcomma }}</td>
+                <td class="result">{{ valuation_20| intcomma }}</td>
+                <td class="result">{{ valuation_25| intcomma }}</td>
                 <!-- https://stackoverflow.com/questions/46144767/how-to-format-a-float-number-in-python-flask-and-jinja -->
             </tr>
         </tbody>
@@ -115,11 +116,11 @@ window.onkeydown = keydown;
     </div>
 
     <div id="footnote">
-        <p>NOPAT: {{ nopat }}千円</p>
-        <p>営業CF: {{ operating_cf }} 千円</p>
-        <p>投資CF: {{ investment_cf }} 千円</p>
-        <p>財務CF: {{ financial_cf }} 千円</p>
-        <p>FCF: {{ free_cash_flow }} 千円</p>
+        <p>NOPAT: {{ nopat| intcomma }}千円</p>
+        <p>営業CF: {{ operating_cf| intcomma }} 千円</p>
+        <p>投資CF: {{ investment_cf| intcomma }} 千円</p>
+        <p>財務CF: {{ financial_cf| intcomma }} 千円</p>
+        <p>FCF: {{ free_cash_flow| intcomma }} 千円</p>
         <p>ROIC（税引前）: {{ roic_bf_tax }} %</p>
         <p>ROIC（税引後）: {{ roic }} %</p>
     </div>

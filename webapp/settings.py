@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'django.contrib.humanize',
 ]
 
 SITE_ID = 1
@@ -151,3 +152,6 @@ GOOGLE_ANALYTICS_TRACKING_ID = "G-JLWH4G5MM3"
 # http -> https redirect
 SECURE_SSL_REDIRECT = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# humanize
+NUMBER_GROUPING = 3
