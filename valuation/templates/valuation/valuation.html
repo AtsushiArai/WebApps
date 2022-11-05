@@ -62,16 +62,18 @@ window.onkeydown = keydown;
                 <th scope="col" colspan="4">成長率</th>
             </tr>
             <tr>
-                <th scope="col">割引率</th>
-                <th scope="col">{{ grows_rate_01 }}%<br><br></th>
-                <th scope="col">{{ grows_rate_06 }}%<br><br></th>
-                <th scope="col">{{ grows_rate_11 }}%<br><br></th>
-                <th scope="col">{{ grows_rate_16 }}%<br><br></th>
-                <th scope="col">{{ grows_rate_21 }}%<br><br></th>
+                <th scope="col"> </th>
+                <th scope="col"> </th>
+                <th scope="col">{{ grows_rate_01 }}%</th>
+                <th scope="col">{{ grows_rate_06 }}%</th>
+                <th scope="col">{{ grows_rate_11 }}%</th>
+                <th scope="col">{{ grows_rate_16 }}%</th>
+                <th scope="col">{{ grows_rate_21 }}%</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <th scope="row">割引率</th>
                 <th scope="row">{{ wacc_adj_01 }}%</th>
                 <td class="result">{{ valuation_01| intcomma }}</td>
                 <td class="result">{{ valuation_06| intcomma }}</td>
@@ -80,6 +82,7 @@ window.onkeydown = keydown;
                 <td class="result">{{ valuation_21| intcomma }}</td>
             </tr>
             <tr>
+                <th scope="row"> </th>
                 <th scope="row">{{ wacc_adj_02 }}%</th>
                 <td class="result">{{ valuation_02| intcomma }}</td>
                 <td class="result">{{ valuation_07| intcomma }}</td>
@@ -88,6 +91,7 @@ window.onkeydown = keydown;
                 <td class="result">{{ valuation_22| intcomma }}</td>
             </tr>
             <tr>
+                <th scope="row"> </th>
                 <th scope="row">{{ wacc_adj_03 }}%</th>
                 <td class="result">{{ valuation_03| intcomma }}</td>
                 <td class="result">{{ valuation_08| intcomma }}</td>
@@ -96,6 +100,7 @@ window.onkeydown = keydown;
                 <td class="result">{{ valuation_23| intcomma }}</td>
             </tr>
             <tr>
+                <th scope="row"> </th>
                 <th scope="row">{{ wacc_adj_04 }}%</th>
                 <td class="result">{{ valuation_04| intcomma }}</td>
                 <td class="result">{{ valuation_09| intcomma }}</td>
@@ -104,13 +109,13 @@ window.onkeydown = keydown;
                 <td class="result">{{ valuation_24| intcomma }}</td>
             </tr>
             <tr>
+                <th scope="row"> </th>
                 <th scope="row">{{ wacc_adj_05 }}%</th>
                 <td class="result">{{ valuation_05| intcomma }}</td>
                 <td class="result">{{ valuation_10| intcomma }}</td>
                 <td class="result">{{ valuation_15| intcomma }}</td>
                 <td class="result">{{ valuation_20| intcomma }}</td>
                 <td class="result">{{ valuation_25| intcomma }}</td>
-                <!-- https://stackoverflow.com/questions/46144767/how-to-format-a-float-number-in-python-flask-and-jinja -->
             </tr>
         </tbody>
     </table>
