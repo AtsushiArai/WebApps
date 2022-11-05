@@ -18,18 +18,6 @@
 
 window.onkeydown = keydown;
 </script>
-<!-- 桁区切り -->
-<!-- https://khirok.hatenadiary.jp/entry/3-digit-easy -->
-<script>
-    function threeDigit(id) {
-        $(document).on('blur', id, function(){
-            var inputVal = $(this).val().replace( /,/g , "");
-            $(this).val(Number(inputVal).toLocaleString());
-        })
-    }
-    
-    threeDigit('#number');
-</script>
 
 {% endblock %}
 {% block main %}
