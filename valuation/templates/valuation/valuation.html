@@ -115,19 +115,21 @@ window.onkeydown = keydown;
                 <th> </th>
             </tr>
         </thead>
-        <tr>
-            <td>NOPAT: {{ nopat| intcomma }}千円</td>
-            <td>FCF: {{ free_cash_flow| intcomma }} 千円</td>
-        </tr>
-        <tr>
-            <td>営業CF: {{ operating_cf| intcomma }} 千円</td>
-            <td>投資CF: {{ investment_cf| intcomma }} 千円</td>
-            <td>財務CF: {{ financial_cf| intcomma }} 千円</td>
-        </tr>
-        <tr>
-            <td>ROIC（税引前）: {{ roic_bf_tax }} %</td>
-            <td>ROIC（税引後）: {{ roic }} %</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>NOPAT: {{ nopat| intcomma }}千円</td>
+                <td>FCF: {{ free_cash_flow| intcomma }} 千円</td>
+            </tr>
+            <tr>
+                <td>営業CF: {{ operating_cf| intcomma }} 千円</td>
+                <td>投資CF: {{ investment_cf| intcomma }} 千円</td>
+                <td>財務CF: {{ financial_cf| intcomma }} 千円</td>
+            </tr>
+            <tr>
+                <td>ROIC（税引前）: {{ roic_bf_tax }} %</td>
+                <td>ROIC（税引後）: {{ roic }} %</td>
+            </tr>
+        </tbody>
     </table>
 <!-- GETの時は評価結果を表示しない -->
 
