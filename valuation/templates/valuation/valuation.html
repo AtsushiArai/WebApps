@@ -148,37 +148,37 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">年度</div>
-                    <div class="td"><input name="year_before_last" type="date" min="2018-01-01" max="2025-12-31" value="2020-03-31">年</div>
-                    <div class="td"><input name="last_year" type="date" min="2018-01-01" max="2025-12-31" value="2021-03-31">年</div>
-                    <div class="td"><input name="this_year" type="date" min="2018-01-01" max="2025-12-31" value="2022-03-31">年</div>
+                    <div class="td"><input name="year_before_last" type="date" min="2018-01-01" max="2025-12-31" value="{{ year_before_last }}">年</div>
+                    <div class="td"><input name="last_year" type="date" min="2018-01-01" max="2025-12-31" value="{{ last_year }}">年</div>
+                    <div class="td"><input name="this_year" type="date" min="2018-01-01" max="2025-12-31" value="{{ this_year }}">年</div>
                     <div class="td"><p class="detail">決算期を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">売上高</div>
-                    <div class="td"><input name="ybl_net_sales" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_net_sales" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="net_sales" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_net_sales" type="number" min="0" max="10000000000000" value="{{ ybl_net_sales }}">千円</div>
+                    <div class="td"><input name="ly_net_sales" type="number" min="0" max="10000000000000" value="{{ ly_net_sales }}">千円</div>
+                    <div class="td"><input name="net_sales" type="number" min="0" max="10000000000000" value="{{ net_sales }}">千円</div>
                     <div class="td"><p class="detail">売上高、役務収益等の、売上合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">売上原価</div>
-                    <div class="td"><input name="ybl_cogs" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_cogs" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="cogs" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_cogs" type="number" min="0" max="10000000000000" value="{{ ybl_cogs }}">千円</div>
+                    <div class="td"><input name="ly_cogs" type="number" min="0" max="10000000000000" value="{{ ly_cogs }}">千円</div>
+                    <div class="td"><input name="cogs" type="number" min="0" max="10000000000000" value="{{ cogs }}">千円</div>
                     <div class="td"><p class="detail">売上原価の合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">販売費及び一般管理費</div>
-                    <div class="td"><input name="ybl_sga" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_sga" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="sga" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_sga" type="number" min="0" max="10000000000000" value="{{ ybl_sga }}">千円</div>
+                    <div class="td"><input name="ly_sga" type="number" min="0" max="10000000000000" value="{{ ly_sga }}">千円</div>
+                    <div class="td"><input name="sga" type="number" min="0" max="10000000000000" value="{{ sga }}">千円</div>
                     <div class="td"><p class="detail">販売費及び一般管理費の合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">営業利益</div>
-                    <div class="td"><input name="ybl_operating_income" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_operating_income" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="operating_income" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_operating_income" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_operating_income }}">千円</div>
+                    <div class="td"><input name="ly_operating_income" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_operating_income }}">千円</div>
+                    <div class="td"><input name="operating_income" type="number" min="-10000000000000" max="10000000000000" value="{{ operating_income }}">千円</div>
                     <div class="td">
                         <p class="detail">営業利益/営業損失の金額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -186,16 +186,16 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">受取利息・配当金</div>
-                    <div class="td"><input name="ybl_interest_and_dividends_income" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_interest_and_dividends_income" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="interest_and_dividends_income" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_interest_and_dividends_income" type="number" min="0" max="10000000000000" value="{{ ybl_interest_and_dividends_income }}">千円</div>
+                    <div class="td"><input name="ly_interest_and_dividends_income" type="number" min="0" max="10000000000000" value="{{ ly_interest_and_dividends_income }}">千円</div>
+                    <div class="td"><input name="interest_and_dividends_income" type="number" min="0" max="10000000000000" value="{{ interest_and_dividends_income }}">千円</div>
                     <div class="td"><p class="detail">受取利息、有価証券利息、受取配当金の合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">持分法投資損益</div>
-                    <div class="td"><input name="ybl_equity_in_earnings_or_losses_of_affiliates" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_equity_in_earnings_or_losses_of_affiliates" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="equity_in_earnings_or_losses_of_affiliates" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_equity_in_earnings_or_losses_of_affiliates" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_equity_in_earnings_or_losses_of_affiliates }}">千円</div>
+                    <div class="td"><input name="ly_equity_in_earnings_or_losses_of_affiliates" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_equity_in_earnings_or_losses_of_affiliates }}">千円</div>
+                    <div class="td"><input name="equity_in_earnings_or_losses_of_affiliates" type="number" min="-10000000000000" max="10000000000000" value="{{ equity_in_earnings_or_losses_of_affiliates }}">千円</div>
                     <div class="td">
                         <p class="detail">持分法投資利益、持分法投資損失の純額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -203,16 +203,16 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">支払利息</div>
-                    <div class="td"><input name="ybl_interest_expenses" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_interest_expenses" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="interest_expenses" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_interest_expenses" type="number" min="0" max="10000000000000" value="{{ ybl_interest_expenses }}">千円</div>
+                    <div class="td"><input name="ly_interest_expenses" type="number" min="0" max="10000000000000" value="{{ ly_interest_expenses }}">千円</div>
+                    <div class="td"><input name="interest_expenses" type="number" min="0" max="10000000000000" value="{{ interest_expenses }}">千円</div>
                     <div class="td"><p class="detail">支払利息、社債利息の合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">経常利益</div>
-                    <div class="td"><input name="ybl_ordinary_income_loss" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_ordinary_income_loss" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ordinary_income_loss" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_ordinary_income_loss" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_ordinary_income_loss }}">千円</div>
+                    <div class="td"><input name="ly_ordinary_income_loss" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_ordinary_income_loss}}">千円</div>
+                    <div class="td"><input name="ordinary_income_loss" type="number" min="-10000000000000" max="10000000000000" value="{{ ordinary_income_loss }}">千円</div>
                     <div class="td">
                         <p class="detail">経常利益/経常損失の金額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -220,9 +220,9 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">特別損益</div>
-                    <div class="td"><input name="ybl_extraordinary_income_and_loss" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_extraordinary_income_and_loss" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="extraordinary_income_and_loss" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_extraordinary_income_and_loss" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_extraordinary_income_and_loss }}">千円</div>
+                    <div class="td"><input name="ly_extraordinary_income_and_loss" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_extraordinary_income_and_loss }}">千円</div>
+                    <div class="td"><input name="extraordinary_income_and_loss" type="number" min="-10000000000000" max="10000000000000" value="{{ extraordinary_income_and_loss }}">千円</div>
                     <div class="td">
                         <p class="detail">特別利益と特別損失の純額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -230,9 +230,9 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">税引前当期純利益</div>
-                    <div class="td"><input name="ybl_income_before_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_income_before_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="income_before_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_income_before_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_income_before_income_taxes }}">千円</div>
+                    <div class="td"><input name="ly_income_before_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_income_before_income_taxes }}">千円</div>
+                    <div class="td"><input name="income_before_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="{{ income_before_income_taxes }}">千円</div>
                     <div class="td">
                         <p class="detail">税引前当期純損益（連結決算をしている場合には「税金等調整前当期純損益」）の金額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -240,9 +240,9 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">法人税等</div>
-                    <div class="td"><input name="ybl_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="income_taxes" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_income_taxes }}">千円</div>
+                    <div class="td"><input name="ly_income_taxes" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_income_taxes }}">千円</div>
+                    <div class="td"><input name="income_taxes" type="number" min="-10000000000000" max="10000000000000" value="{{ income_taxes }}">千円</div>
                     <div class="td">
                         <p class="detail">税金費用（「法人税・住民税・事業税」、「過年度法人税等」、「法人税等調整額」）を合算して入力してください。</p>
                         <p class="detail-notice">還付や法人税等調整額の影響で税金費用がマイナス（利益）となる場合には、マイナスで入力してください。</p>
@@ -250,9 +250,9 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">非支配株主持分に帰属する当期純利益</div>
-                    <div class="td"><input name="ybl_profit_loss_attributable_to_non_controling_interests" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_profit_loss_attributable_to_non_controling_interests" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="profit_loss_attributable_to_non_controling_interests" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_profit_loss_attributable_to_non_controling_interests" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_profit_loss_attributable_to_non_controling_interests }}">千円</div>
+                    <div class="td"><input name="ly_profit_loss_attributable_to_non_controling_interests" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_profit_loss_attributable_to_non_controling_interests }}">千円</div>
+                    <div class="td"><input name="profit_loss_attributable_to_non_controling_interests" type="number" min="-10000000000000" max="10000000000000" value="{{ profit_loss_attributable_to_non_controling_interests }}">千円</div>
                     <div class="td">
                         <p class="detail">連結決算をしていない場合には「０」と入力してください。非支配株主持分に帰属する当期純損益の金額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -260,9 +260,9 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">（親会社株主に帰属する）当期純利益</div>
-                    <div class="td"><input name="ybl_profit_loss_attributable_to_owners_of_parent" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_profit_loss_attributable_to_owners_of_parent" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="profit_loss_attributable_to_owners_of_parent" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_profit_loss_attributable_to_owners_of_parent" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_profit_loss_attributable_to_owners_of_parent }}">千円</div>
+                    <div class="td"><input name="ly_profit_loss_attributable_to_owners_of_parent" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_profit_loss_attributable_to_owners_of_parent }}">千円</div>
+                    <div class="td"><input name="profit_loss_attributable_to_owners_of_parent" type="number" min="-10000000000000" max="10000000000000" value="{{ profit_loss_attributable_to_owners_of_parent }}">千円</div>
                     <div class="td">
                         <p class="detail">当期純損益（連結決算をしている場合には「親会社株主に帰属する当期純利益」）の金額を入力してください。</p>
                         <p class="detail-notice">損失の場合には、マイナスで入力してください。</p>
@@ -270,23 +270,23 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">減価償却費（売上原価・販管費）</div>
-                    <div class="td"><input name="ybl_depreciation" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_depreciation" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="depreciation" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_depreciation" type="number" min="0" max="10000000000000" value="{{ ybl_depreciation }}">千円</div>
+                    <div class="td"><input name="ly_depreciation" type="number" min="0" max="10000000000000" value="{{ ly_depreciation }}">千円</div>
+                    <div class="td"><input name="depreciation" type="number" min="0" max="10000000000000" value="{{ depreciation }}">千円</div>
                     <div class="td"><p class="detail">売上原価と販管費に含まれる「減価償却費」の合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">のれん償却費</div>
-                    <div class="td"><input name="ybl_amortization_goodwill" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_amortization_goodwill" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="amortization_goodwill" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_amortization_goodwill" type="number" min="0" max="10000000000000" value="{{ ybl_amortization_goodwill }}">千円</div>
+                    <div class="td"><input name="ly_amortization_goodwill" type="number" min="0" max="10000000000000" value="{{ ly_amortization_goodwill }}">千円</div>
+                    <div class="td"><input name="amortization_goodwill" type="number" min="0" max="10000000000000" value="{{ amortization_goodwill }}">千円</div>
                     <div class="td"><p class="detail">販管費に含まれる「のれん償却費」の合計金額を入力してください。</p></div>
             </div>
             <div class="tr">
                 <div class="th">減損損失</div>
-                    <div class="td"><input name="ybl_impairment" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_impairment" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="impairment" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_impairment" type="number" min="0" max="10000000000000" value="{{ ybl_impairment }}">千円</div>
+                    <div class="td"><input name="ly_impairment" type="number" min="0" max="10000000000000" value="{{ ly_impairment }}">千円</div>
+                    <div class="td"><input name="impairment" type="number" min="0" max="10000000000000" value="{{ impairment }}">千円</div>
                     <div class="td"><p class="detail">特別損失に計上された「減損損失」の合計金額を入力してください。</p></div>
             </div>
         </div>
@@ -303,194 +303,194 @@ window.onkeydown = keydown;
 
             <div class="tr">
                 <div class="th">現金預金</div>
-                    <div class="td"><input name="ybl_cash_and_deposits" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_cash_and_deposits" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="cash_and_deposits" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_cash_and_deposits" type="number" min="0" max="10000000000000" value="{{ ybl_cash_and_deposits }}">千円</div>
+                    <div class="td"><input name="ly_cash_and_deposits" type="number" min="0" max="10000000000000" value="{{ ly_cash_and_deposits }}">千円</div>
+                    <div class="td"><input name="cash_and_deposits" type="number" min="0" max="10000000000000" value="{{ cash_and_deposits }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">有価証券</div>
-                    <div class="td"><input name="ybl_securities" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_securities" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="securities" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_securities" type="number" min="0" max="10000000000000" value="{{ ybl_securities }}">千円</div>
+                    <div class="td"><input name="ly_securities" type="number" min="0" max="10000000000000" value="{{ ly_securities }}">千円</div>
+                    <div class="td"><input name="securities" type="number" min="0" max="10000000000000" value="{{ securities }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">受取手形及び売掛金（貸倒引当金控除後）</div>
-                    <div class="td"><input name="ybl_notes_and_accounts_receivable_trade" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_notes_and_accounts_receivable_trade" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="notes_and_accounts_receivable_trade" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_notes_and_accounts_receivable_trade" type="number" min="0" max="10000000000000" value="{{ ybl_notes_and_accounts_receivable_trade }}">千円</div>
+                    <div class="td"><input name="ly_notes_and_accounts_receivable_trade" type="number" min="0" max="10000000000000" value="{{ ly_notes_and_accounts_receivable_trade }}">千円</div>
+                    <div class="td"><input name="notes_and_accounts_receivable_trade" type="number" min="0" max="10000000000000" value="{{ notes_and_accounts_receivable_trade }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">棚卸資産</div>
-                    <div class="td"><input name="ybl_inventories" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_inventories" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="inventories" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_inventories" type="number" min="0" max="10000000000000" value="{{ ybl_inventories }}">千円</div>
+                    <div class="td"><input name="ly_inventories" type="number" min="0" max="10000000000000" value="{{ ly_inventories }}">千円</div>
+                    <div class="td"><input name="inventories" type="number" min="0" max="10000000000000" value="{{ inventories }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">繰延税金資産（流動）</div>
-                    <div class="td"><input name="ybl_deferred_tax_assets_ca" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_deferred_tax_assets_ca" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="deferred_tax_assets_ca" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_deferred_tax_assets_ca" type="number" min="0" max="10000000000000" value="{{ ybl_deferred_tax_assets_ca }}">千円</div>
+                    <div class="td"><input name="ly_deferred_tax_assets_ca" type="number" min="0" max="10000000000000" value="{{ ly_deferred_tax_assets_ca }}">千円</div>
+                    <div class="td"><input name="deferred_tax_assets_ca" type="number" min="0" max="10000000000000" value="{{ deferred_tax_assets_ca }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">流動資産　合計</div>
-                    <div class="td"><input name="ybl_current_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_current_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="current_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_current_assets" type="number" min="0" max="10000000000000" value="{{ ybl_current_assets }}">千円</div>
+                    <div class="td"><input name="ly_current_assets" type="number" min="0" max="10000000000000" value="{{ ly_current_assets }}">千円</div>
+                    <div class="td"><input name="current_assets" type="number" min="0" max="10000000000000" value="{{ current_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">有形固定資産　合計</div>
-                    <div class="td"><input name="ybl_property_plant_and_equipment" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_property_plant_and_equipment" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="property_plant_and_equipment" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_property_plant_and_equipment" type="number" min="0" max="10000000000000" value="{{ ybl_property_plant_and_equipment }}">千円</div>
+                    <div class="td"><input name="ly_property_plant_and_equipment" type="number" min="0" max="10000000000000" value="{{ ly_property_plant_and_equipment }}">千円</div>
+                    <div class="td"><input name="property_plant_and_equipment" type="number" min="0" max="10000000000000" value="{{ property_plant_and_equipment }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">無形固定資産　合計</div>
-                    <div class="td"><input name="ybl_intangible_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_intangible_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="intangible_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_intangible_assets" type="number" min="0" max="10000000000000" value="{{ ybl_intangible_assets }}">千円</div>
+                    <div class="td"><input name="ly_intangible_assets" type="number" min="0" max="10000000000000" value="{{ ly_intangible_assets }}">千円</div>
+                    <div class="td"><input name="intangible_assets" type="number" min="0" max="10000000000000" value="{{ intangible_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">繰延税金資産（固定）</div>
-                    <div class="td"><input name="ybl_deferred_tax_assets_ioa" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_deferred_tax_assets_ioa" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="deferred_tax_assets_ioa" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_deferred_tax_assets_ioa" type="number" min="0" max="10000000000000" value="{{ ybl_deferred_tax_assets_ioa }}">千円</div>
+                    <div class="td"><input name="ly_deferred_tax_assets_ioa" type="number" min="0" max="10000000000000" value="{{ ly_deferred_tax_assets_ioa }}">千円</div>
+                    <div class="td"><input name="deferred_tax_assets_ioa" type="number" min="0" max="10000000000000" value="{{ deferred_tax_assets_ioa }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">投資その他の資産　合計</div>
-                    <div class="td"><input name="ybl_investments_and_other_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_investments_and_other_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="investments_and_other_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_investments_and_other_assets" type="number" min="0" max="10000000000000" value="{{ ybl_investments_and_other_assets }}">千円</div>
+                    <div class="td"><input name="ly_investments_and_other_assets" type="number" min="0" max="10000000000000" value="{{ ly_investments_and_other_assets }}">千円</div>
+                    <div class="td"><input name="investments_and_other_assets" type="number" min="0" max="10000000000000" value="{{ investments_and_other_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">資産　合計</div>
-                    <div class="td"><input name="ybl_total_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_total_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="total_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_total_assets" type="number" min="0" max="10000000000000" value="{{ ybl_total_assets }}">千円</div>
+                    <div class="td"><input name="ly_total_assets" type="number" min="0" max="10000000000000" value="{{ ly_total_assets }}">千円</div>
+                    <div class="td"><input name="total_assets" type="number" min="0" max="10000000000000" value="{{ total_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">短期有利子負債</div>
-                    <div class="td"><input name="ybl_short_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_short_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="short_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_short_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="{{ ybl_short_term_interest_bearing_bond }}">千円</div>
+                    <div class="td"><input name="ly_short_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="{{ ly_short_term_interest_bearing_bond }}">千円</div>
+                    <div class="td"><input name="short_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="{{ short_term_interest_bearing_bond }}">千円</div>
                     <div class="td"><p class="detail">短期借入金、一年内返済予定借入金、短期社債、短期リース債務</p></div>
             </div>
             <div class="tr">
                 <div class="th">仕入債務（支払手形、買掛金）</div>
-                    <div class="td"><input name="ybl_notes_and_accounts_payable_trade" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_notes_and_accounts_payable_trade" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="notes_and_accounts_payable_trade" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_notes_and_accounts_payable_trade" type="number" min="0" max="10000000000000" value="{{ ybl_notes_and_accounts_payable_trade }}">千円</div>
+                    <div class="td"><input name="ly_notes_and_accounts_payable_trade" type="number" min="0" max="10000000000000" value="{{ ly_notes_and_accounts_payable_trade }}">千円</div>
+                    <div class="td"><input name="notes_and_accounts_payable_trade" type="number" min="0" max="10000000000000" value="{{ notes_and_accounts_payable_trade }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">繰延税金負債（流動）</div>
-                    <div class="td"><input name="ybl_deferred_tax_liabilities_ca" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_deferred_tax_liabilities_ca" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="deferred_tax_liabilities_ca" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_deferred_tax_liabilities_ca" type="number" min="0" max="10000000000000" value="{{ ybl_deferred_tax_liabilities_ca }}">千円</div>
+                    <div class="td"><input name="ly_deferred_tax_liabilities_ca" type="number" min="0" max="10000000000000" value="{{ ly_deferred_tax_liabilities_ca }}">千円</div>
+                    <div class="td"><input name="deferred_tax_liabilities_ca" type="number" min="0" max="10000000000000" value="{{ deferred_tax_liabilities_ca }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">流動負債　合計</div>
-                    <div class="td"><input name="ybl_current_liabilities" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_current_liabilities" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="current_liabilities" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_current_liabilities" type="number" min="0" max="10000000000000" value="{{ ybl_current_liabilities }}">千円</div>
+                    <div class="td"><input name="ly_current_liabilities" type="number" min="0" max="10000000000000" value="{{ ly_current_liabilities }}">千円</div>
+                    <div class="td"><input name="current_liabilities" type="number" min="0" max="10000000000000" value="{{ current_liabilities }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">長期有利子負債</div>
-                    <div class="td"><input name="ybl_long_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_long_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="long_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_long_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="{{ ybl_long_term_interest_bearing_bond }}">千円</div>
+                    <div class="td"><input name="ly_long_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="{{ ly_long_term_interest_bearing_bond }}">千円</div>
+                    <div class="td"><input name="long_term_interest_bearing_bond" type="number" min="0" max="10000000000000" value="{{ long_term_interest_bearing_bond }}">千円</div>
                     <div class="td"><p class="detail">長期借入金、社債、長期リース債務</p></div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">繰延税金負債（固定）</div>
-                    <div class="td"><input name="ybl_deferred_tax_liabilities_ncl" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_deferred_tax_liabilities_ncl" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="deferred_tax_liabilities_ncl" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_deferred_tax_liabilities_ncl" type="number" min="0" max="10000000000000" value="{{ ybl_deferred_tax_liabilities_ncl }}">千円</div>
+                    <div class="td"><input name="ly_deferred_tax_liabilities_ncl" type="number" min="0" max="10000000000000" value="{{ ly_deferred_tax_liabilities_ncl }}">千円</div>
+                    <div class="td"><input name="deferred_tax_liabilities_ncl" type="number" min="0" max="10000000000000" value="{{ deferred_tax_liabilities_ncl }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">固定負債　合計</div>
-                    <div class="td"><input name="ybl_noncurrent_liabilities" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_noncurrent_liabilities" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="noncurrent_liabilities" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_noncurrent_liabilities" type="number" min="0" max="10000000000000" value="{{ ybl_noncurrent_liabilities }}">千円</div>
+                    <div class="td"><input name="ly_noncurrent_liabilities" type="number" min="0" max="10000000000000" value="{{ ly_noncurrent_liabilities }}">千円</div>
+                    <div class="td"><input name="noncurrent_liabilities" type="number" min="0" max="10000000000000" value="{{ noncurrent_liabilities }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">資本金</div>
-                    <div class="td"><input name="ybl_capital_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_capital_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="capital_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_capital_stock" type="number" min="0" max="10000000000000" value="{{ ybl_capital_stock }}">千円</div>
+                    <div class="td"><input name="ly_capital_stock" type="number" min="0" max="10000000000000" value="{{ ly_capital_stock }}">千円</div>
+                    <div class="td"><input name="capital_stock" type="number" min="0" max="10000000000000" value="{{ capital_stock }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">資本剰余金</div>
-                    <div class="td"><input name="ybl_capital_surplus" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_capital_surplus" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="capital_surplus" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_capital_surplus" type="number" min="0" max="10000000000000" value="{{ ybl_capital_surplus }}">千円</div>
+                    <div class="td"><input name="ly_capital_surplus" type="number" min="0" max="10000000000000" value="{{ ly_capital_surplus }}">千円</div>
+                    <div class="td"><input name="capital_surplus" type="number" min="0" max="10000000000000" value="{{ capital_surplus }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">利益剰余金</div>
-                    <div class="td"><input name="ybl_retained_earnings" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_retained_earnings" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="retained_earnings" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_retained_earnings" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_retained_earnings }}">千円</div>
+                    <div class="td"><input name="ly_retained_earnings" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_retained_earnings }}">千円</div>
+                    <div class="td"><input name="retained_earnings" type="number" min="-10000000000000" max="10000000000000" value="{{ retained_earnings }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">自己株式</div>
-                    <div class="td"><input name="ybl_treasury_stock" type="number" min="-10000000000000" max="0" value="0">千円</div>
-                    <div class="td"><input name="ly_treasury_stock" type="number" min="-10000000000000" max="0" value="0">千円</div>
-                    <div class="td"><input name="treasury_stock" type="number" min="-10000000000000" max="0" value="0">千円</div>
+                    <div class="td"><input name="ybl_treasury_stock" type="number" min="-10000000000000" max="0" value="{{ ybl_treasury_stock }}">千円</div>
+                    <div class="td"><input name="ly_treasury_stock" type="number" min="-10000000000000" max="0" value="{{ ly_treasury_stock }}">千円</div>
+                    <div class="td"><input name="treasury_stock" type="number" min="-10000000000000" max="0" value="{{ treasury_stock }}">千円</div>
                     <div class="td">
                         <p class="detail-notice">マイナス値で入力してください。</p>
                     </div>
             </div>
             <div class="tr">
                 <div class="th">その他包括利益（評価・換算差額）　合計</div>
-                    <div class="td"><input name="ybl_accumulated_other_comprehensive_income" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_accumulated_other_comprehensive_income" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="accumulated_other_comprehensive_income" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_accumulated_other_comprehensive_income" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_accumulated_other_comprehensive_income }}">千円</div>
+                    <div class="td"><input name="ly_accumulated_other_comprehensive_income" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_accumulated_other_comprehensive_income }}">千円</div>
+                    <div class="td"><input name="accumulated_other_comprehensive_income" type="number" min="-10000000000000" max="10000000000000" value="{{ accumulated_other_comprehensive_income }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">新株予約権</div>
-                    <div class="td"><input name="ybl_subscription_rights_to_shares" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_subscription_rights_to_shares" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="subscription_rights_to_shares" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_subscription_rights_to_shares" type="number" min="0" max="10000000000000" value="{{ ybl_subscription_rights_to_shares }}">千円</div>
+                    <div class="td"><input name="ly_subscription_rights_to_shares" type="number" min="0" max="10000000000000" value="{{ ly_subscription_rights_to_shares }}">千円</div>
+                    <div class="td"><input name="subscription_rights_to_shares" type="number" min="0" max="10000000000000" value="{{ subscription_rights_to_shares }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">非支配株主持分</div>
-                    <div class="td"><input name="ybl_non_controlling_interests" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_non_controlling_interests" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="non_controlling_interests" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_non_controlling_interests" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_non_controlling_interests }}">千円</div>
+                    <div class="td"><input name="ly_non_controlling_interests" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_non_controlling_interests }}">千円</div>
+                    <div class="td"><input name="non_controlling_interests" type="number" min="-10000000000000" max="10000000000000" value="{{ non_controlling_interests }]">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">純資産　合計</div>
-                    <div class="td"><input name="ybl_net_assets" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_net_assets" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="net_assets" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_net_assets" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_net_assets }}">千円</div>
+                    <div class="td"><input name="ly_net_assets" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_net_assets }}">千円</div>
+                    <div class="td"><input name="net_assets" type="number" min="-10000000000000" max="10000000000000" value="{{ net_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">負債・純資産　合計</div>
-                    <div class="td"><input name="ybl_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ ybl_liabilities_and_net_assets">千円</div>
+                    <div class="td"><input name="ly_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ ly_liabilities_and_net_assets }}">千円</div>
+                    <div class="td"><input name="liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ liabilities_and_net_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
         </div>
@@ -507,37 +507,37 @@ window.onkeydown = keydown;
 
             <div class="tr">
                 <div class="th">前期末純資産　合計</div>
-                    <div class="td"><input name="ybl_net_assets_py" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_net_assets_py" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="net_assets_py" type="number" min="-10000000000000" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_net_assets_py" type="number" min="-10000000000000" max="10000000000000" value="{{ ybl_net_assets_py }}">千円</div>
+                    <div class="td"><input name="ly_net_assets_py" type="number" min="-10000000000000" max="10000000000000" value="{{ ly_net_assets_py }}">千円</div>
+                    <div class="td"><input name="net_assets_py" type="number" min="-10000000000000" max="10000000000000" value="{{ net_assets_py }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">新株の発行</div>
-                    <div class="td"><input name="ybl_issuance_of_new_shares" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_issuance_of_new_shares" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="issuance_of_new_shares" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_issuance_of_new_shares" type="number" min="0" max="10000000000000" value="{{ ybl_issuance_of_new_shares }}">千円</div>
+                    <div class="td"><input name="ly_issuance_of_new_shares" type="number" min="0" max="10000000000000" value="{{ ly_issuance_of_new_shares }}">千円</div>
+                    <div class="td"><input name="issuance_of_new_shares" type="number" min="0" max="10000000000000" value="{{ issuance_of_new_shares }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">配当金</div>
-                    <div class="td"><input name="ybl_dividends_ss" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_dividends_ss" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="dividends_ss" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_dividends_ss" type="number" min="0" max="10000000000000" value="{{ ybl_dividends_ss }}">千円</div>
+                    <div class="td"><input name="ly_dividends_ss" type="number" min="0" max="10000000000000" value="{{ ly_dividends_ss }}">千円</div>
+                    <div class="td"><input name="dividends_ss" type="number" min="0" max="10000000000000" value="{{ dividends_ss }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">自己株式の取得</div>
-                    <div class="td"><input name="ybl_purchase_of_treasury_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_purchase_of_treasury_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="purchase_of_treasury_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_purchase_of_treasury_stock" type="number" min="0" max="10000000000000" value="{{ ybl_purchase_of_treasury_stock }}">千円</div>
+                    <div class="td"><input name="ly_purchase_of_treasury_stock" type="number" min="0" max="10000000000000" value="{{ ly_purchase_of_treasury_stock }}">千円</div>
+                    <div class="td"><input name="purchase_of_treasury_stock" type="number" min="0" max="10000000000000" value="{{ purchase_of_treasury_stock }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">自己株式の処分</div>
-                    <div class="td"><input name="ybl_disposal_of_treasury_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_disposal_of_treasury_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="disposal_of_treasury_stock" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_disposal_of_treasury_stock" type="number" min="0" max="10000000000000" value="{{ ybl_disposal_of_treasury_stock }}">千円</div>
+                    <div class="td"><input name="ly_disposal_of_treasury_stock" type="number" min="0" max="10000000000000" value="{{ ly_disposal_of_treasury_stock }}">千円</div>
+                    <div class="td"><input name="disposal_of_treasury_stock" type="number" min="0" max="10000000000000" value="{{ disposal_of_treasury_stock }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
         </div>
@@ -553,23 +553,23 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">発行済株式総数</div>
-                    <div class="td"><input name="ybl_total_number_of_issued_shares" type="number" min="0" max="10000000000000" value="0">株</div>
-                    <div class="td"><input name="ly_total_number_of_issued_shares" type="number" min="0" max="10000000000000" value="0">株</div>
-                    <div class="td"><input name="total_number_of_issued_shares" type="number" min="0" max="10000000000000" value="0">株</div>
+                    <div class="td"><input name="ybl_total_number_of_issued_shares" type="number" min="0" max="10000000000000" value="{{ ybl_total_number_of_issued_shares }}">株</div>
+                    <div class="td"><input name="ly_total_number_of_issued_shares" type="number" min="0" max="10000000000000" value="{{ ly_total_number_of_issued_shares }}">株</div>
+                    <div class="td"><input name="total_number_of_issued_shares" type="number" min="0" max="10000000000000" value="{{ total_number_of_issued_shares }}">株</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">自己株式数</div>
-                    <div class="td"><input name="ybl_number_of_shares_held_in_own_name" type="number" min="0" max="10000000000000" value="0">株</div>
-                    <div class="td"><input name="ly_number_of_shares_held_in_own_name" type="number" min="0" max="10000000000000" value="0">株</div>
-                    <div class="td"><input name="number_of_shares_held_in_own_name" type="number" min="0" max="10000000000000" value="0">株</div>
+                    <div class="td"><input name="ybl_number_of_shares_held_in_own_name" type="number" min="0" max="10000000000000" value="{{ ybl_number_of_shares_held_in_own_name }}">株</div>
+                    <div class="td"><input name="ly_number_of_shares_held_in_own_name" type="number" min="0" max="10000000000000" value="{{ ly_number_of_shares_held_in_own_name }}">株</div>
+                    <div class="td"><input name="number_of_shares_held_in_own_name" type="number" min="0" max="10000000000000" value="{{ number_of_shares_held_in_own_name }}">株</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
                 <div class="th">1株あたり配当金額</div>
-                    <div class="td"><input name="ybl_dividend_paid_per_share" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="ly_dividend_paid_per_share" type="number" min="0" max="10000000000000" value="0">千円</div>
-                    <div class="td"><input name="dividend_paid_per_share" type="number" min="0" max="10000000000000" value="0">千円</div>
+                    <div class="td"><input name="ybl_dividend_paid_per_share" type="number" min="0" max="10000000000000" value="{{ ybl_dividend_paid_per_share }}">千円</div>
+                    <div class="td"><input name="ly_dividend_paid_per_share" type="number" min="0" max="10000000000000" value="{{ ly_dividend_paid_per_share }}">千円</div>
+                    <div class="td"><input name="dividend_paid_per_share" type="number" min="0" max="10000000000000" value="{{ dividend_paid_per_share }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
             </div>
             <div class="tr">
@@ -583,7 +583,7 @@ window.onkeydown = keydown;
                 <div class="th">借入利率</div>
                     <div class="td"><input name="" value="---" disabled></div>
                     <div class="td"><input name="" value="---" disabled></div>
-                    <div class="td"><input name="borrowing_interest_rate" type="number" step="0.01" min="0.00" max="100.00" value="1.00">％</div>
+                    <div class="td"><input name="borrowing_interest_rate" type="number" step="0.01" min="0.00" max="100.00" value="{{ borrowing_interest_rate }}">％</div>
                     <div class="td"><p class="detail">借入金の平均利率を入力してください</p></div>
             </div>
         </div>
