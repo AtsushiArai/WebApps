@@ -665,7 +665,7 @@ def valuation(request):
         context['number_of_shares_held_in_own_name'] = form_number_of_shares_held_in_own_name
         context['dividend_paid_per_share'] = form_dividend_paid_per_share
         context['effective_tax_rate'] = form_effective_tax_rate
-        context['borrowing_interest_rate'] = form_borrowing_interest_rate
+        context['borrowing_interest_rate'] = form_borrowing_interest_rate * 100
 
         context['operating_cf'] = int(calc_operating_cf)
         context['investment_cf'] = int(calc_investment_cf)
