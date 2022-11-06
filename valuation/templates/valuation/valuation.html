@@ -488,7 +488,7 @@ window.onkeydown = keydown;
             </div>
             <div class="tr">
                 <div class="th">負債・純資産　合計</div>
-                    <div class="td"><input name="ybl_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ ybl_liabilities_and_net_assets">千円</div>
+                    <div class="td"><input name="ybl_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ ybl_liabilities_and_net_assets }}">千円</div>
                     <div class="td"><input name="ly_liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ ly_liabilities_and_net_assets }}">千円</div>
                     <div class="td"><input name="liabilities_and_net_assets" type="number" min="0" max="10000000000000" value="{{ liabilities_and_net_assets }}">千円</div>
                     <div class="td"><p class="detail"></p></div>
@@ -583,7 +583,7 @@ window.onkeydown = keydown;
                 <div class="th">借入利率</div>
                     <div class="td"><input name="" value="---" disabled></div>
                     <div class="td"><input name="" value="---" disabled></div>
-                    <div class="td"><input name="borrowing_interest_rate" type="number" step="0.01" min="0.00" max="100.00" value="{{ borrowing_interest_rate }}">％</div>
+                    <div class="td"><input name="borrowing_interest_rate" type="number" step="0.01" min="0.00" max="100.00" value="{{ round(borrowing_interest_rate * 100, 2) }}">％</div>
                     <div class="td"><p class="detail">借入金の平均利率を入力してください</p></div>
             </div>
         </div>

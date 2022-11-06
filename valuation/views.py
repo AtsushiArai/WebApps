@@ -503,6 +503,10 @@ def valuation(request):
                     wacc_adj.append(s)
                     grows_rate.append(r)
 
+        context['year_before_last'] = form_year_before_last
+        context['last_year'] = form_last_year
+        context['this_year'] = form_this_year
+
         context['ybl_net_sales'] = ybl_form_net_sales
         context['ybl_cogs'] = ybl_form_cogs
         context['ybl_sga'] = ybl_form_sga
