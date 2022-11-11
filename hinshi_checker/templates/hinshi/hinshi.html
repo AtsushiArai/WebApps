@@ -30,12 +30,10 @@
 <h2>品詞分解</h2>
 <form action="" method="POST">
     {% csrf_token %}
-    <div>
-        <p>テキスト</p>
+    <div class="input-field">
+        <p class="inform">テキストを入力してください</p>
         <input class="input-text-box" type="text" name="text" value="{{ text }}">
-    </div>
-    <div>
-        <button type="submit" id="btn-submit" class="btn btn-primary">品詞分解スタート</button>
+        <button type="submit" id="btn-submit" class="btn btn-primary btn-setting">品詞分解スタート</button>
     </div>
 </form>
 
