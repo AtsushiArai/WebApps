@@ -78,7 +78,15 @@ th {
     margin-bottom: 1rem;
 }
 
+.input-table-cell {
+    border: none;
+}
+
 .input-text {
-    border: solid 1px;
+    border: none;
+    width: 90%;
+}
+
+.input-text-box {
     width: 100%;
 }
