@@ -33,7 +33,7 @@
     <div>
         <table class="table-style">
             <tr>
-                <td>テキスト</td>
+                <td class="table-cell">テキスト</td>
                 <td class="input-text"><input type="text" name="text" value="{{ text }}"></td>
             </tr>
         </table>
@@ -46,30 +46,27 @@
 <div>
     <table class="table-style">
         <tr>
-            <th>単語</th>
-            <th>品詞</th>
-            <th>品詞細分類1</th>
-            <th>品詞細分類2</th>
-            <th>品詞細分類3</th>
-            <th>活用型</th>
-            <th>活用形</th>
-            <th>基本形、見出し語</th>
-            <th>読み
-
-            </th>
-
+            <th class="table-cell">単語</th>
+            <th class="table-cell">品詞</th>
+            <th class="table-cell">品詞細分類1</th>
+            <th class="table-cell">品詞細分類2</th>
+            <th class="table-cell">品詞細分類3</th>
+            <th class="table-cell">活用型</th>
+            <th class="table-cell">活用形</th>
+            <th class="table-cell">基本形、見出し語</th>
+            <th class="table-cell">読み</th>
         </tr>
         {% for surface, part_of_speech_0, part_of_speech_1, part_of_speech_2, part_of_speech_3, infl_type, infl_form, base_form, reading in results %}
         <tr>
-            <td> {{ surface }}</td>
-            <td> {{ part_of_speech_0 }}</td>
-            <td> {{ part_of_speech_1 }}</td>
-            <td> {{ part_of_speech_2 }}</td>
-            <td> {{ part_of_speech_3 }}</td>
-            <td> {{ infl_type }}</td>
-            <td> {{ infl_form }}</td>
-            <td> {{ base_form }}</td>
-            <td> {{ reading }}</td>
+            <td class="table-cell"> {{ surface }}</td>
+            <td class="table-cell"> {{ part_of_speech_0 }}</td>
+            <td class="table-cell"> {{ part_of_speech_1 }}</td>
+            <td class="table-cell"> {{ part_of_speech_2 }}</td>
+            <td class="table-cell"> {{ part_of_speech_3 }}</td>
+            <td class="table-cell"> {{ infl_type }}</td>
+            <td class="table-cell"> {{ infl_form }}</td>
+            <td class="table-cell"> {{ base_form }}</td>
+            <td class="table-cell"> {{ reading }}</td>
         </tr>
         {% endfor %}
     </table>
