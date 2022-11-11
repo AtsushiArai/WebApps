@@ -12,16 +12,15 @@ def hinshi_checker(request):
 
         tokenizer = Tokenizer()
 
-        surface = []
-        part_of_speech = []
+        result = []
 
         for token in tokenizer.tokenize(posted_text):
-            surface.append(token.surface)
-            part_of_speech.append(token.part_of_speech.split(',')[0])
+            surface = token.surface
+            part_of_speech = token.part_of_speech.split(',')[0]
+            result.append([surface, part_of_speech])
 
         context = {
-            'surface': surface,
-            'part_of_speech': part_of_speech,
+            'result': result,
             'text': posted_text,
         }
 
