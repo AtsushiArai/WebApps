@@ -20,7 +20,7 @@ def hinshi_checker(request):
             result.append([surface, part_of_speech])
 
         context = {
-            'result': result,
+            'results': result,
             'text': posted_text,
         }
 
