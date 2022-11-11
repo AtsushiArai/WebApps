@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block extraheader %}
+{% load static %}
+<title>簡易品詞分解ツール</title>
+<meta name="description" content="品詞分解を簡単に行えます。">
+<link rel="stylesheet" href="{% static 'hinshi/css/style.css' %}">
+{% endblock %}
+{% block main %}
+
+<!-- パンくずリスト start -->
+<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com">
+            <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://input-and-output.com/hinshi-check/">
+            <span itemprop="name">品詞チェッカー</span>
+        </a>
+        <meta itemprop="position" content="2" />
+    </li>
+</ol>
+<!-- パンくずリスト end -->
+
+<h2>品詞分解</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        <table class="calc-kaup">
+            <tr>
+                <td>テキスト</td>
+                <td><input type="text" name="text" value="{{ text }}"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button type="submit" id="btn-submit" class="btn btn-primary">品詞分解スタート</button>
+    </div>
+</form>
+
+<div>
+    <table class="calc-kaup">
+        <tr>
+            <th>単語</th>
+            <th>品詞</th>
+        </tr>
+        {% for result in context %}
+        <tr>
+            <td> {{ result.surface }}</td>
+            <td> {{ result.part_of_speech }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

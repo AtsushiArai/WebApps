@@ -1,0 +1,79 @@
+@media screen and(min-width:480px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and(max-width:960px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* breadcrumbs start */
+.breadcrumb {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline;
+    list-style: none;
+  }
+  
+  .breadcrumb li:after {
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #495057;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+  /* breadcrumbs end */
+  
+.paragraph {
+    margin-top: 20px;
+}
+
+.inner-paragraph {
+    margin-bottom: 2px;
+}
+
+table {
+    border: solid 1px ;
+}
+
+/* CSS | display:flexのgapで要素間の余白を指定する方法 */
+/* https://1-notes.com/css-flexbox-gap/ */
+.table-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+td, th {
+    padding: 10px;
+    border: solid 1px;
+}
+
+th {
+    background-color: ivory;
+}
+
+
+.calc-kaup {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

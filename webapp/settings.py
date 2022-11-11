@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'kaup_index.apps.KaupIndexConfig',
     'bmi_index.apps.BmiIndexConfig',
     'valuation.apps.ValuationConfig',
+    'hinshi_checker.apps.HinshiCheckerConfig',
     'django_bootstrap5',
     'blog.apps.BlogConfig',
     'django.contrib.sites',

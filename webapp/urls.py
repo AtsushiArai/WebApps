@@ -22,7 +22,7 @@ from kaup_index.views import kaup
 from bmi_index.views import bmi
 # from blog.views import blog
 from valuation.views import valuation
-
+from hinshi_checker.views import hinshi_checker
 from .sitemaps import Static_Sitemap
 
 sitemaps = {
@@ -36,5 +36,6 @@ urlpatterns = [
     path('bmi/', bmi, name='bmi'),
     path('valuation/', valuation, name='valuation'),
     path('blog/', include('blog.urls')),
+    path('hinchi-checker', hinshi_checker, name='hinshi_checker'),
     path('sitemap.xml', sitemap, {'sitemaps':sitemaps}, name='sitemaps'),
 ]
