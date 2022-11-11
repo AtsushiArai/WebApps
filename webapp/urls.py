@@ -36,6 +36,6 @@ urlpatterns = [
     path('bmi/', bmi, name='bmi'),
     path('valuation/', valuation, name='valuation'),
     path('blog/', include('blog.urls')),
-    path('hinchi-checker', hinshi_checker, name='hinshi_checker'),
+    path('hinshi-checker', hinshi_checker, name='hinshi_checker'),
     path('sitemap.xml', sitemap, {'sitemaps':sitemaps}, name='sitemaps'),
 ]
