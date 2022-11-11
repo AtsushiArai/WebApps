@@ -73,7 +73,11 @@ th {
 }
 
 
-.result-hinshi {
+.table-style {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.input-text {
+    width: 20%;
 }
