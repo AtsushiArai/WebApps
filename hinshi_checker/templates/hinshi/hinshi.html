@@ -31,12 +31,8 @@
 <form action="" method="POST">
     {% csrf_token %}
     <div>
-        <table class="table-style">
-            <tr>
-                <td class="input-table-cell">テキスト</td>
-                <td class="input-text"><input class="input-text-box" type="text" name="text" value="{{ text }}"></td>
-            </tr>
-        </table>
+        <p>テキスト</p>
+        <input class="input-text-box" type="text" name="text" value="{{ text }}">
     </div>
     <div>
         <button type="submit" id="btn-submit" class="btn btn-primary">品詞分解スタート</button>
